@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
+
+:root {
+    --primary: #072AC8;
+    --accent: #43D2FF;
+    --primary-hover: #A2D6F9;
+    --primary-tapped: #D1EDFF;
+
+    --neutral-dark: #292E47;
+    --neutral-medium: #6B708D;
+    --neutral-light: #F2F4FC;
+    --neutral-light-blue: #ECF7FF;
+
+    --secondary: #FFC600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    background-color: var(--neutral-light);
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.header-left .logo {
+    max-height: 50px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: var(--neutral-medium);
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 36px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.contact-btn {
+    background: var(--primary);
+    color: white;
+}
+
+.projects-btn {
+    color: var(--neutral-medium);
+    padding: 10px 36px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.hero-section-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero-section-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-section-text p {
+    font-size: 1.1rem;
+}
+
+.hero-section-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-section-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-section-buttons {
+    margin-top: 40px;
+}
