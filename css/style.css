@@ -1,28 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
-
-:root {
-  --primary: #072AC8;
-  --accent: #43D2FF;
-  --primary-hover: #A2D6F9;
-  --primary-tapped: #D1EDFF;
-  --neutral-dark: #292E47;
-  --neutral-medium: #6B708D;
-  --neutral-light: #F2F4FC;
-  --neutral-light-blue: #ECF7FF;
-  --secondary: #FFC600;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto';
-  box-sizing: border-box;
-}
-
-body {
-  background-color: var(--neutral-light);
-}
-
 p {
     color: var(--neutral-medium);
 }
@@ -41,18 +16,20 @@ h1 {
   font-weight: bold;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
+header * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
 /* Header */
-.main-header {
+.header {
+  width: 85%;
+  margin: 40px auto;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 20px;
   color: #fff;
 }
 
@@ -111,7 +88,8 @@ h1 {
 }
 
 .hero-section-image .main-image {
-  width: 100%;
+  width: 600px;
+  max-width: 100%;
   height: auto;
   display: block;
   z-index: 1;
@@ -434,6 +412,7 @@ h1 {
 
 .footer-left {
   flex: 1;
+  float: left;
   min-width: 250px;
 }
 
