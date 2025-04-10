@@ -21,8 +21,8 @@
 }
 
 body {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -44,4 +44,61 @@ h3 {
 h4 {
     font-size: 24px;
     font-weight: bold;
+}
+
+p {
+    color: var(--neutral-medium);
+}
+
+
+
+header * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    width: 85%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.header-left .logo {
+    max-height: 50px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: var(--neutral-medium);
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 36px;
+    text-decoration: none;
+}
+
+.contact-btn {
+    background: var(--primary);
+    color: white;
+}
+
+.projects-btn {
+    color: var(--neutral-medium);
+    padding: 10px 36px;
+    text-decoration: none;
+    border-radius: 4px;
 }

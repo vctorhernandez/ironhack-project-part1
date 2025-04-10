@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Agency</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logos/favicon.ico" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="../index.html"><img src="../images/logos/circle.svg" alt="Logo" class="logo" /></a>
+        </div>
+        <nav class="header-center">
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#services">Services</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="../pages/contact.html" class="btn contact-btn">Contact Us</a>
+        </div>
+    </header>
+
+    <form id="contactFormWrapper" class="contact-form-wrapper" action="" method="get">
+        <h1>Contact Us</h1>
+
+        <div class="contact-name-wrapper">
+            <label for="fullName">Full Name</label><br>
+            <input type="text" placeholder="Enter your full name" name="fullName" id="fullName" onblur="validateName()"
+                required>
+            <p id="nameError" hidden class="validation-error">Please enter your name.</p>
+        </div>
+
+        <div class="contact-info">
+            <div>
+                <label for="contactEmail">Email</label><br>
+                <input type="email" name="contactEmail" id="contactEmail" placeholder="Enter your email address"
+                    onblur="validateEmail()" required>
+                <p id="emailError" hidden class="validation-error">Please fill in the EMAIL field</p>
+                <p id="emailFormatError" hidden class="validation-error">Please provide a valid email address</p>
+            </div>
+            <div>
+                <label for="contactPhone">Phone</label><br>
+                <input type="text" name="contactPhone" id="contactPhone" placeholder="Enter your phone number"
+                    onblur="validatePhone()" required>
+                <p id="phoneError" hidden class="validation-error">Please enter your phone number</p>
+            </div>
+        </div>
+
+        <div class="contact-message-wrapper">
+            <label for="contactMessage">Message</label><br>
+            <textarea name="contactMessage" id="contactMessage" cols="30" rows="10"
+                placeholder="Write your message here..." onblur="validateMessage()" required></textarea>
+            <p id="messageError" hidden class="validation-error">The message must be at least 5 characters long</p>
+        </div>
+
+        <div class="contact-submit-wrapper">
+            <button type="button" onclick="sendForm()" id="contactSubmit">Submit</button>
+            <p class="validation-error" id="submitError" hidden> Please check the required fields</p>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="../images/logos/circle.svg" alt="Footer Logo" />
+            <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+        </div>
+        <div class="footer-right">
+            <ul class="footer-menu">
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../js/contact.js"></script>
+</body>
+
+</html>
