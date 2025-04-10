@@ -1,4 +1,6 @@
-document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+/* Scroll DOWN to Project Section */
+
+document.querySelectorAll('a[href*="#"]').forEach(anchor => { // all <a> pointing to same page (#)
   anchor.addEventListener('click', function(e) {
     const targetHref = this.getAttribute('href');
     if (targetHref.startsWith('#') || targetHref.includes(window.location.pathname)) {
@@ -7,11 +9,10 @@ document.querySelectorAll('a[href*="#"]').forEach(anchor => {
       const targetSelector = targetHref.substring(hashIndex);
       const targetElement = document.querySelector(targetSelector);
       if (targetElement) {
-        // Calcula la posición del elemento objetivo
         const elementPosition = targetElement.getBoundingClientRect().top;
-        // Offset: 10% de la altura de la ventana
-        const offset = window.innerHeight * 0.1;
-        const offsetPosition = elementPosition + window.pageYOffset - offset;
+        const isProjectsLink = this.parentElement.classList.contains('nav-item-projects');
+        const offset = isProjectsLink ? window.innerHeight * 0.1 : 0;
+        const offsetPosition = elementPosition + window.scrollY - offset;
         window.scrollTo({
           top: offsetPosition,
           behavior: "smooth"
@@ -23,24 +24,6 @@ document.querySelectorAll('a[href*="#"]').forEach(anchor => {
 });
 
 
-window.addEventListener("load", async () => {
-  try {
-    const response = await fetch(
-      "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects"
-    );
-    const data = await response.json();
-
-    var articles = data.reverse().slice(0, 3).map(jsonProjectToHtmlArticle);
-
-    const container = document.querySelector("div.projects-container");
-    container.innerHTML = "";
-    articles.forEach((article) => container.appendChild(article));
-  } catch (error) {
-    console.log(error);
-  } finally {
-    document.querySelector("section.recent-projects").removeAttribute("hidden");
-  }
-});
 
 /* Scroll UP Button */
 const scrollUpBtn = document.getElementById('scrollBtn');
