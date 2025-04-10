@@ -6,6 +6,8 @@
 
 **Circle** es una landing page moderna para un estudio digital de diseño y desarrollo web. El objetivo principal es mostrar una presencia visual fuerte y profesional, destacando los servicios, proyectos recientes y generando confianza con un diseño limpio y llamativo.
 
+https://thriving-pie-ea2c17.netlify.app/ 
+
 ---
 
 ## 🛠️ Stack Tecnológico
