@@ -41,3 +41,25 @@ window.addEventListener("load", async () => {
     document.querySelector("section.recent-projects").removeAttribute("hidden");
   }
 });
+
+/* Scroll UP Button */
+const scrollUpBtn = document.getElementById('scrollBtn');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollUpBtn.classList.add('show');
+    scrollUpBtn.classList.remove('hide');
+  } else {
+    scrollUpBtn.classList.add('hide');
+    scrollUpBtn.classList.remove('show');
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+scrollUpBtn.addEventListener('click', scrollToTop);
