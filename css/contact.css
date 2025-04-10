@@ -105,10 +105,6 @@ input {
 }
 
 @media (max-width: 575.9px) {
-    h1 {
-        font-size: 35px;
-    }
-
     .contact-info {
         display: block;
     }
@@ -134,10 +130,6 @@ input {
 }
 
 @media (min-width: 576px) {
-    h1 {
-        font-size: 35px;
-    }
-
     .contact-form-wrapper {
         margin-left: 60px;
         margin-right: 60px;
@@ -178,10 +170,6 @@ input {
     #contactEmail {
         width: 94%;
     }
-
-    h1 {
-        font-size: 60px;
-    }
 }
 
 @media (min-width: 992px) {
@@ -191,9 +179,5 @@ input {
 
     #contactPhone {
         width: 98%;
-    }
-
-    h1 {
-        font-size: 60px;
     }
 }

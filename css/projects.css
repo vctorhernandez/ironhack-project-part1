@@ -10,7 +10,6 @@
   
   .title {
     text-align: left;
-    font-size: 35px;
     margin-left: 40px;
     margin-top: 10%;
   }
@@ -231,11 +230,7 @@
   
   /* --- DESKTOP ADJUSTMENTS --- */
   
-  @media (min-width: 992px) {
-    h1 {
-      font-size: 50px;
-    }
-  
+  @media (min-width: 992px) { 
     .title {
       text-align: left;
       font-size: 60px;
