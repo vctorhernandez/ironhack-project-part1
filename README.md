@@ -24,7 +24,7 @@
 - ✅ Hero section con imagen destacada y llamada a la acción
 - ✅ Sección de proyectos con cards y enlaces a detalles individuales
 - ✅ Página de contacto accesible desde el header
-- ✅ Diseño completamente responsive para móvil, tablet y escritorio
+- ✅ Diseño completamente responsive para móvil y escritorio
 - ✅ Uso de variables CSS para mantener consistencia de color
 - ✅ Scroll suave entre secciones ancla
 
@@ -37,8 +37,8 @@
 | `/index.html` | Página principal con hero, proyectos y servicios |
 | `/pages/projects.html` | Página con detalles de un proyecto específico |
 | `/pages/contact.html` | Formulario de contacto o información para contactar |
-| `/css/` | Carpeta de hojas de estilo (`global.css`, `index.css`, `projects.css`...) |
-| `/js/` | Archivos JavaScript (`global.js`, `projects.js`) |
+| `/css/` | Carpeta de hojas de estilo (`global.css`, `index.css`, `projects.css`, `contact.css`) |
+| `/js/` | Archivos JavaScript (`global.js`, `index.js`, `projects.js`, `contact.js`) |
 | `/images/` | Recursos visuales como logos, mockups, fondos y avatares |
 
 ---
@@ -47,4 +47,4 @@
 
 1. Clona este repositorio:
 ```bash
-git clone https://github.com/tu-usuario/circle-landing.git
+git clone https://github.com/vctorhernandez/ironhack-project-part1
