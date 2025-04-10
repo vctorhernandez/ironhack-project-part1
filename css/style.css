@@ -70,17 +70,17 @@ header * {
 .hero-section {
   display: flex;
   align-items: center;
-  padding: 40px 20px;
+  margin: 60px auto;
+  max-width: 85%;
+
 }
 
 .hero-section-text {
   flex: 1;
-  padding-right: 20px;
 }
 
 .hero-section-image {
   flex: 1;
-  text-align: right;
 }
 
 .hero-section-image .image-container {
@@ -88,8 +88,9 @@ header * {
 }
 
 .hero-section-image .main-image {
-  width: 600px;
+  width: 400px;
   max-width: 100%;
+  margin-right: 20px;
   height: auto;
   display: block;
   z-index: 1;
@@ -99,18 +100,18 @@ header * {
   position: absolute;
   z-index: 2;
   background: transparent;
-  width: 340px;
+  width: 240px;
   height: auto;
 }
 
 .hero-section-image .top-left {
-  top: -35px;
-  left: -110px;
+  top: 0px;
+  left: 20px;
 }
 
 .hero-section-image .bottom-right {
-  bottom: -160px;
-  right: -110px;
+  bottom: -80px;
+  right: -50px;
 }
 
 .hero-section-text h1 {
@@ -128,8 +129,9 @@ header * {
 
 /* Partners */
 .partners {
+  margin-top: 10%;
+  max-width: 85%;
   text-align: center;
-  margin-left: auto;
 }
 
 .partners-container {
@@ -148,7 +150,8 @@ header * {
 
 /* Recent Projects */
 .recent-projects {
-  padding: 40px 20px;
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 .recent-projects h3 {
@@ -157,16 +160,13 @@ header * {
 
 .projects-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  gap: 60px;
 }
-
+  
 .project-card {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
+  flex: 1;
 }
 
 .project-card img {
@@ -177,7 +177,9 @@ header * {
 }
 
 .project-card .card-content {
+  width: 100%;
   padding: 15px;
+  text-align: left;
 }
 
 .project-card h3 {
@@ -192,26 +194,22 @@ header * {
   font-size: 0.8rem;
   color: var(--neutral-medium);
   flex-grow: 1;
+  
 }
 
 .project-card a {
-  margin: 500px 10px 10px 10px;
+  margin: 10px;
+  margin-top: auto;
   font-size: 0.8rem;
   text-decoration: none;
   color: var(--primary);
   align-self: flex-start;
 }
 
-@media (max-width: 768px) {
-  .project-card {
-    width: 100%;
-  }
-}
-
 /* Testimonials */
 .testimonials {
-  width: 100%;
-  background: var(--neutral-dark) url("images/testimonials/orbit.png") no-repeat
+  margin-top: 10%;
+  background: var(--neutral-dark) url("../images/testimonial-section/orbit.png") no-repeat
     center center;
   background-size: contain;
   padding: 80px 30px;
@@ -239,28 +237,28 @@ header * {
 
 .avatar {
   position: absolute;
-  width: 100px;
+  width: 120px;
   height: auto;
 }
 
 .avatar.top-left {
   top: -120px;
-  left: -20px;
+  left: -60px;
 }
 
 .avatar.top-right {
   top: -120px;
-  right: -20px;
+  right: -60px;
 }
 
 .avatar.bottom-left {
   bottom: -20px;
-  left: -20px;
+  left: -60px;
 }
 
 .avatar.bottom-right {
   bottom: -20px;
-  right: -20px;
+  right: -60px;
 }
 
 .testimonial-quote {
@@ -289,27 +287,26 @@ header * {
 
 /* Services */
 .services {
-  padding: 40px 20px;
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 .services h3 {
+  text-align: left;
   margin-bottom: 40px;
 }
 
+
 .services-container {
   display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 60px;
 }
 
 .service-card {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 280px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  text-align: left;
+  flex: 1;
+  padding: 20px;
 }
 
 .service-icon {
@@ -317,10 +314,10 @@ header * {
   height: 60px;
   background-color: var(--neutral-light-blue);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
+  margin: 10px;
+  margin-bottom: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 .service-icon img {
@@ -355,8 +352,10 @@ header * {
   }
 }
 
+
 /* Subscribe */
 .subscribe {
+  margin-top: 10%;
   background-color: var(--secondary);
   text-align: center;
   padding: 100px 20px;
@@ -378,7 +377,7 @@ header * {
 }
 
 .subscribe-form input {
-  min-width: 250px;
+  min-width: 300px;
   padding: 15px 20px 15px 40px;
   border: none;
   font-size: 0.9rem;
@@ -403,6 +402,7 @@ header * {
 
 /* Footer */
 .footer {
+  max-width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -419,7 +419,6 @@ header * {
 .footer-left img {
   max-width: 150px;
   height: auto;
-  display: block;
   margin-bottom: 15px;
 }
 
